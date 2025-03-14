@@ -10,7 +10,10 @@ namespace Algorithmic_Problems
     {
         static void Main()
         {
-            string input = "Rahil Tariq";
+            Console.WriteLine("Enter a string: ");
+            string input = Console.ReadLine();
+            //string input = "Rahil Tariq";
+
             string vowels = "aeiouAEIOU";
 
             StringBuilder result = new StringBuilder();
