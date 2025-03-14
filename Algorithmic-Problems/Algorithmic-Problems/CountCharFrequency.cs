@@ -10,13 +10,14 @@ namespace Algorithmic_Problems
     {
         static void Main()
         {
-            string input = "hello world";
+            Console.WriteLine("Enter a string: ");
+            string input = Console.ReadLine();
 
             Dictionary<char, int> frequency = new Dictionary<char, int>();
 
-            foreach(char c in input)
+            foreach (char c in input)
             {
-                if(c == ' ')
+                if (c == ' ')
                     continue;
 
                 if (frequency.ContainsKey(c))
@@ -29,7 +30,7 @@ namespace Algorithmic_Problems
                 }
             }
 
-            foreach(var pair in frequency)
+            foreach (var pair in frequency)
             {
                 Console.WriteLine($"{pair.Key}{pair.Value}");
             }
