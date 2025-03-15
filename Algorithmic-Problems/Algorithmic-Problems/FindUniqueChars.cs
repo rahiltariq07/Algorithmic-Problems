@@ -32,7 +32,7 @@ namespace Algorithmic_Problems
             {
                 if (pair.Value == 1)
                 {
-                    Console.Write(pair.Key + ",");
+                    Console.Write(pair.Key + " ");
                 }
             }
         }
